@@ -1,0 +1,36 @@
+<!--
+<template name="home">
+	<div class="main">
+		<div class="page-header">
+			<h1 class="text-center">Welcome to GossipME</h1>
+		</div>
+		<div class="span12">
+			test2
+		</div>
+	</div>
+</template>
+-->
+<template name="home">
+	<div class="main">
+		<div class="container-fluid">
+		    <div class="row">
+				<div class="col-sm-4 col-md-2 sidebar">
+		    		{{>sidebarMain}}
+				</div>
+				<div class="col-sm-8 col-md-10 main">
+					<div class="page-header">
+						<h1 class="text-center">Recent Gossips</h1>
+					</div>
+					<ul>
+						{{#each gossipsRecent}}
+					    	<li>{{name}} {{surname}}, {{city}}, {{school}}, {{employer}}</li>
+								{{#each gossips}}
+									<p>&nbsp; - {{post}} &nbsp; {{postedAt}}</p>
+								{{/each}}
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

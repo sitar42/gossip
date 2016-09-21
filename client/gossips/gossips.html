@@ -1,0 +1,19 @@
+<template name="gossips">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-md-2 sidebar">
+		    	{{>sidebarMain}}
+			</div>
+			<div class="col-sm-8 col-md-10 main">
+				<div class="page-header">
+					<h1 class="text-center">Gossips</h1>
+				</div>
+				<ul>
+					{{#each getGossips}}
+				    	<li>{{name}}</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
