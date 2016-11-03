@@ -2,18 +2,18 @@
 	<!-- <ul class="nav nav-list"> --> 
 	<ul class="nav nav-sidebar">
 	    <li class="nav-header"></li>
-	<!--	<li><img src={{returnProfilePicture currentUser.services.facebook.id}} alt="Profile Picture"></li> -->
+		<li><img src={{returnProfilePicture currentUser.services.facebook.id}} alt="Profile Picture"></li>
 		<li>
-			{{currentUser.services.facebook.name}} 
+			<!-- {{currentUser.services.facebook.name}} -->
+			{{returnName}}
 			<button id="logout">Logout</button>
 		</li>
-		<li class="active">
-			<a href="/">Gossips</a>
-		</li>
-		<li class="{{ activeIfTemplateIs 'messages' }}">
-			<a href="/messages">Messages</a>
-		</li>
-		<li><a href="/friends">Friends</a></li>
+		<!--<li class="active"><a href="/">Home</a></li>
+		 <li class="{{ activeIfTemplateIs 'friends' }}"> -->
+		<li><a href="/gossipsToMe">Bana Ne Demişler</a></li>
+		<li><a href="/gossipsMade">Yaptığım Dedikodular</a></li>
+		<li><a href="/friends">Arkadaşlar</a></li>
+		<li><a href="/">Şehirden Dedikodular</a></li>
 	</ul>
 	
 </template>

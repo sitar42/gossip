@@ -1,4 +1,4 @@
-<template name="friends">
+<template name="gossipsMade">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4 col-md-2 sidebar">
@@ -11,11 +11,10 @@
 			</div>
 			<div class="col-sm-8 col-md-10 main">
 				<div class="page-header">
-					<h1 class="text-center">ARKADAŞ LİSTEM</h1>
+					<h1 class="text-center">Yaptığım Dedikodular</h1>
 				</div>
 				<ul>
-					Friends List:
-					{{#each returnFriends currentUser}}
+					{{#each getGossips}}
 				    	<li>{{name}}</li>
 					{{/each}}
 				</ul>

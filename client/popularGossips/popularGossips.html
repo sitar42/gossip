@@ -11,7 +11,7 @@
 </template>
 -->
 
-<template name="home">
+<template name="popularGossips">
 	<div class="main">
 		<div class="container-fluid">
 		    <div class="row">
@@ -25,13 +25,13 @@
 				</div>
 				<div class="col-sm-8 col-md-10 main">
 					<div class="page-header">
-						<h1 class="text-center">X Nedir ve Nasıl Çalışır?</h1>
+						<h1 class="text-center">Son Dedikodular</h1>
 					</div>
 					<ul>
-						<p style="color:purple;">1) İstediğin isim, şehir, üniversite veya bölüm için arama yapabilir, 
-							yapılan dedikoduları görebilirsin.</p>
-						<p style="color:purple;">2) Aradığın kişi yoksa ilk sen dedikodusunu yapabilirsin.</p>
-						<p style="color:purple;">3) Yaptığın yorum küfür ve hakaret içermiyorsa, onaylandıktan sonra yayınlanır.</p>
+						<p style="color:purple;">Yapılan tüm dedikoduları görmek için birinin üzerine tıkla</p>
+						{{#each gossips}}
+					    	<li class="gossipHome">{{gossipUser.name}} {{gossipUser.surname}}, {{gossipUser.city}} - {{post}}</li>
+						{{/each}}
 					</ul>
 				</div>
 			</div>

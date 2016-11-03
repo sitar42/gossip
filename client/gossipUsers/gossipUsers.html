@@ -1,0 +1,29 @@
+<template name="gossipUsers">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-md-2 sidebar">
+		    	{{>sidebarMain}}
+				{{#if currentUser}}
+					{{>sidebar1}}
+				{{else}}
+			    	{{>sidebar2}}
+				{{/if}}
+			</div>
+			<div class="col-sm-8 col-md-10 main">
+				<div class="page-header">
+					<h1 class="text-center">Arama Sonuçları</h1>
+				</div>
+				<ul>
+					<p style="color:purple;">Yapılan tüm dedikoduları görmek için birinin üzerine tıkla</p>
+					{{#each getGossips}}
+				    	<li class="gossipUser">{{name}} {{surname}}, {{city}}, {{school}}</li>
+					{{else}}
+						<li>{{getInfo}} 
+							<button id="dedikodula" background-color= "purple">Dedikodula!</button>
+						</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>

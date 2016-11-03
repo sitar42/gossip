@@ -1,16 +1,21 @@
-<template name="gossips">
+<template name="userGossips">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4 col-md-2 sidebar">
 		    	{{>sidebarMain}}
+				{{#if currentUser}}
+					{{>sidebar1}}
+				{{else}}
+			    	{{>sidebar2}}
+				{{/if}}
 			</div>
 			<div class="col-sm-8 col-md-10 main">
 				<div class="page-header">
-					<h1 class="text-center">Gossips</h1>
+					<h1 class="text-center">{{getName}}</h1>
 				</div>
 				<ul>
 					{{#each getGossips}}
-				    	<li>{{name}}</li>
+				    	<li>{{post}}</li>
 					{{/each}}
 				</ul>
 			</div>

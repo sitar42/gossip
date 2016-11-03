@@ -1,7 +1,8 @@
 //console.log("Inside Collections");
 
 Users = new Mongo.Collection('userCollection');
-//Gossips = new Mongo.Collection('gossips');
+Gossips = new Mongo.Collection('gossips');
+GossipUsers = new Mongo.Collection('gossipUsers');
 
 //GossipCollection.insert({name:"sitar", city:"Ankara", school:"Bilkent", employer:"", createdAt: new Date()});
 //GossipCollection.insert({name:"testN", city:"testC", school:"testS", employer:"testE", createdAt: new Date()});

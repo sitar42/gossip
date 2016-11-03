@@ -1,0 +1,29 @@
+<template name="gossipCreate">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-md-2 sidebar">
+		    	{{>sidebarMain}}
+				{{#if currentUser}}
+					{{>sidebar1}}
+				{{else}}
+			    	{{>sidebar2}}
+				{{/if}}
+			</div>
+			<div class="col-sm-8 col-md-10 main">
+				<div class="page-header">
+					<h1 class="text-center">Dedikodu Yarat</h1>
+				</div>
+				<form>
+						<p style="color:purple;">Aramak istediğiniz bilgileri girin:</p>
+					    <input type="text" name="name" placeholder="İsim - Name ?" />
+						<input type="text" name="surname" placeholder="Soyisim - Surname ?" />
+					    <input type="text" name="city" placeholder="Şehir - City ?" />
+						<input type="text" name="school" placeholder="Okul veya Üniversite ?" />
+						<input type="text" name="department" placeholder="Bölümü - Department ?" />
+						<input type="text" name="employer" placeholder="İş Yeri - Employer ?" />
+						<input type="submit" id="search" value="Ara" />
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

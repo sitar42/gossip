@@ -2,63 +2,8 @@
   <title>Gossip Me</title>
 </head>
 
-<body>
+<body style="background-color:powderblue;">
   {{>navigation}}
- <!-- {{>mainPage}} -->
-<!--  {{>login}} -->
 </body>
 
-<template name="mainPage">
-	<div class="container-fluid">
-	    <div class="row">
-			<div class="col-sm-4 col-md-2 sidebar">
-	    		{{>sidebarMain}}
-			</div>
-			<div class="col-sm-8 col-md-10 main">
-	    		<!--{{renderPage}} -->
-				{{>home}}
-			</div>
-		</div>
-	</div>
-</template>		
-			
-	
-
-<!-- Initial version of login screen
-<template name="login">
-	<div class="container-fluid">
-		{{#if currentUser}}
-	    	<div class="row">
-				<div class="col-sm-3 col-md-2 sidebar">
-	    			<div class="span2">
-	    				{{>sidebar1}}
-					</div>
-					<div class="span10">
-	    				{{renderPage}}
-					</div>
-				</div>
-				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-					<div class="page-header">
-						<h1 class="text-center">MAIN</h1>
-					</div>
-					<div class="span12">
-						test Main
-					</div>
-				</div>
-			</div>
-		{{else}}
-	    	<div class="row">
-				<div class="col-sm-3 col-md-2 sidebar">
-	    			<div class="span2">
-	    				{{>sidebar2}}
-					</div>
-					<div class="span10">
-	    				{{renderPage}}
-					</div>
-				</div>
-			</div>
-		{{/if}}
-	</div>
-</template>
--->
 
